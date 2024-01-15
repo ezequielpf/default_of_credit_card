@@ -4,6 +4,9 @@
 
 Original data https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients
 
+Dados históricos dos últimos 6 meses de 30000 contas/clientes.
+Objetivo: modelo para prever se um cliente ficará inadimplente no próximo mês.
+
 ## 2. Business assumptions
 
 
@@ -30,7 +33,7 @@ Original data https://archive.ics.uci.edu/dataset/350/default+of+credit+card+cli
       - PAY_2: Repayment status in August 2005
       - ...
       - PAY_6: Repayment status in April 2005
-      - Measurement Scale: -1 = Pay duly, 1 = Payment delay for one month, 2 = Payment delay for two months, ..., 8 = Payment delay for eight months, 9 = Payment delay for nine months and above
+      - Measurement Scale: -1 = Pay duly, 1 = Payment delay for one month, 2 = Payment delay for two months, ..., 8 = Payment delay for eight months, 9 = Payment delay for nine months and above, -2 = iníciou o mês sem valor a ser pago e não usou o cédito, 0: feito o pagamento mínimo, mas com saldo devedor
 
    - **Amount of Bill Statement (NT dollar):**
       - BILL_AMT1: Bill statement amount in September 2005
