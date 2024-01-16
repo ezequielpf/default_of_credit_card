@@ -1,16 +1,21 @@
 # Default of credit card
 
-## 1. Business problem
+## 1. Buisiness problem
+
+In recent years, the credit card issuers in Taiwan faced the cash and credit card debt crisis. In order to increase market share, card-issuing banks in Taiwan over-issued cash and credit cards to unqualified applicants. At the same time, most cardholders, irrespective of their repayment ability, overused credit card for consumption and accumulated heavy credit and cash–card debts. The crisis caused the blow to consumer finance confidence and it is a big challenge for both banks and cardholders. The main objective is to develop a Machine Learning model able to preditc if a customer will default in the next month.
 
 Original data https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients
 
-Dados históricos dos últimos 6 meses de 30000 contas/clientes.
-Objetivo: modelo para prever se um cliente ficará inadimplente no próximo mês.
-
 ## 2. Business assumptions
 
+- Database with 30k entries (clients or accounts)
+- Historic data from the last six months
+- All monetary data are presented in New Taiwan Dollar (NT$)
 
 ## 3. Solution strategy
+
+- Train a Machine Learning **classification** model to predict the customer default (Binary: YES or NO)
+- In addition, the model should present the default **probability** of each customer (Numeric: %)
 
 ### 1. Step 01. Data description
 
