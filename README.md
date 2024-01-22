@@ -9,7 +9,8 @@ Original data https://archive.ics.uci.edu/dataset/350/default+of+credit+card+cli
 ## 2. Business assumptions
 
 - Database with 30k entries (clients or accounts)
-- Historic data from the last six months
+- Historic data from six months
+- Target variable (**Default Payment**) represents the seventh month
 - All monetary data are presented in New Taiwan Dollar (NT$)
 
 ## 3. Solution strategy
@@ -52,6 +53,9 @@ Original data https://archive.ics.uci.edu/dataset/350/default+of+credit+card+cli
       - ...
       - PAY_AMT6: Amount paid in April 2005
    
+   **OBS:** Some attributes represents cattegories even though their values are numeric
+    - 'SEX', 'EDUCATION', 'MARRIAGE', 'PAY_1', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6'
+   
 
 
 ### 2. Step 02. Feature engineering
@@ -61,7 +65,7 @@ Original data https://archive.ics.uci.edu/dataset/350/default+of+credit+card+cli
 ### 6. Step 06. Feature selection
 ### 7. Step 07. Machine learning modelling
 ### 8. Step 08. Hyperparameter fine tunning
-### 9. Step 09 Convert model performance to business values
+### 9. Step 09. Convert model performance to business values
 ## 4. Top 3 data insights
 ## 5. Machine learning model applied
 ## 6. Machine learning performance
